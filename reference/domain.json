@@ -1,0 +1,10 @@
+{
+  "event_types": ["registration", "withdrawal", "sponsor_change", "invoice", "payment", "cancellation"],
+  "invoice_states": ["received", "accrued", "paid", "reversed"],
+  "currencies": [
+    "CNY",
+    "HKD",
+    "USD"
+  ],
+  "quantity_precision": 6
+}
