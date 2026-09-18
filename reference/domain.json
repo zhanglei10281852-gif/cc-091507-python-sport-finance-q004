@@ -1,10 +1,29 @@
 {
-  "event_types": ["registration", "withdrawal", "sponsor_change", "invoice", "payment", "cancellation"],
+  "event_types": [
+    "event_created",
+    "cost_center_created",
+    "commitment_created",
+    "registration",
+    "withdrawal",
+    "contract_versioned",
+    "scope_adjusted",
+    "cancellation",
+    "commitment_closed",
+    "invoice_received",
+    "payment_received",
+    "approval_requested",
+    "approval_decided",
+    "approval_expired"
+  ],
+  "ledger_layers": ["committed", "earned", "invoiced", "accrued", "released", "paid"],
+  "invoice_kinds": ["normal", "red", "reissue"],
   "invoice_states": ["received", "accrued", "paid", "reversed"],
+  "approval_states": ["pending", "approved", "rejected", "expired"],
   "currencies": [
     "CNY",
     "HKD",
     "USD"
   ],
-  "quantity_precision": 6
+  "quantity_precision": 6,
+  "money_precision": 2
 }
