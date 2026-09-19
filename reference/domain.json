@@ -1,6 +1,33 @@
 {
-  "event_types": ["registration", "withdrawal", "sponsor_change", "invoice", "payment", "cancellation"],
-  "invoice_states": ["received", "accrued", "paid", "reversed"],
+  "event_types": [
+    "registration",
+    "withdrawal",
+    "sponsor_change",
+    "route_change",
+    "cancellation",
+    "fulfillment",
+    "invoice",
+    "payment"
+  ],
+  "invoice_states": [
+    "received",
+    "partially_paid",
+    "paid",
+    "reversed",
+    "split",
+    "superseded"
+  ],
+  "invoice_relations": [
+    "split",
+    "red_letter",
+    "reissue"
+  ],
+  "ledger_layers": [
+    "committed",
+    "accrued",
+    "payable",
+    "paid"
+  ],
   "currencies": [
     "CNY",
     "HKD",
